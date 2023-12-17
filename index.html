@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find your inspiration. | Flickr</title>
+    <link rel="icon" class="title-logo" href="flickr-logo.jpg">
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="flickr.js" />
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/ba881efac0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar-ket">
+      <!-- <div class="navbar-flex">
+            <div class="company-logo navbar-logo-flex">
+                <img  class="navbar-company-logo"  src="assets (2)/asset 0.png" alt=""> <h1>flickr</h1>
+            </div>
+            <div class="search-bar">
+                <input type="search" placeholder="search img">
+            </div>
+            <div class="log-sign-flex" >
+                <div class="login-btn">
+                    <a href="#">Log In</a>
+                </div>
+                <div class="Sign-btn">
+                    <a href="#"><button>Sign Up</button></a>
+                </div>
+            </div>
+           
+        </div> -->
+      <div class="container flex">
+        <div class="company-logo">
+          <ul class="flex company-logo-section">
+            <li>
+              <img
+                class="navbar-company-logo"
+                src="assets/asset 0.png"
+                alt=""
+              />
+            </li>
+            <li><h1>flickr</h1></li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <ul class="flex search-bar-section">
+            <button
+              class="search-logo"
+              type="submit"
+              style="
+                width: 36px;
+                height: 32px;
+                border-right-width: 0px;
+                border-top-width: 0px;
+                border-left-width: 0px;
+                border-bottom-width: 0px;
+                padding-bottom: 4px;
+                background-color: white;
+                padding-top: 4px;
+              "
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input
+              class="search-input"
+              type="text"
+              placeholder="Photos,people or groups.."
+              name="search"
+              style="
+                border-top-width: 0px;
+                border-left-width: 0px;
+                border-bottom-width: 0px;
+                border-right-width: 0px;
+                width: 657.812px;
+                height: 32px;
+              "
+            />
+          </ul>
+        </div>
+
+        <div class="buttons">
+          <ul class="flex buttons-section">
+            <button class="LOG">Log in</button>
+            <button class="SIGN">Sign Up</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main flex" id="screen" onclick="changeScreen();">
+      <!-- <img src="assets/dog.jpeg" alt=""> -->
+      <div class="fixed-para flex">
+        <div class="flex heading1">
+          <h1>Find your inspiration.</h1>
+        </div>
+        <div class="flex heading2">
+          <h2 id="crocs1">
+            Join the Flickr community, home to tens of billions of
+          </h2>
+          <h2 id="crocs2">photos and 2 million groups.</h2>
+        </div>
+        <div class="free-button-section flex">
+          <button class="free-button"
+            style="
+              border-left-width: 0px;
+              border-top-width: 0px;
+              border-right-width: 0px;
+              border-bottom-width: 0px;
+              width: 160px;
+              height: 64px;
+              padding-left: 20px;
+              padding-right: 20px;
+            "
+          >
+            Start for free
+          </button>
+        </div>
+      </div>
+      <div class="dynamic-para flex">
+        <h4 class="Title flex" id="title-image"></h4>
+        <h4 class="artist flex" id="artist-name"></h4>
+      </div>
+    </div>
+    <div class="bottom-container flex">
+      <li><a href="" class="flex">About</a></li>
+      <li><a href="" class="flex">Jobs</a></li>
+      <li><a href="" class="flex">Blog</a></li>
+      <li><a href="" class="flex">Advertise</a></li>
+      <li><a href="" class="flex">Developers</a></li>
+      <li><a href="" class="flex">Guidelines</a></li>
+      <li><a href="" class="flex">Help</a></li>
+      <li><a href="" class="flex">Help Forum</a></li>
+      <li><a href="" class="flex">Privacy</a></li>
+      <li><a href="" class="flex">Terms</a></li>
+      <li><a href="" class="flex">Cookies</a></li>
+      <li><a href="" class="flex">English</a></li>
+      <li><a href="" class="flex">SmugMug+Flickr</a></li>
+      <li><a href="" id="socials"><i class="fa-brands face fa-square-facebook fa-xl"></i></a></li>
+      <li><a href="" id="socials"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+      <li><a href="" id="socials"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+      
+    </div>
+    <script>
+      // function changeScreen1() {
+      //   document.getElementById("screen").style.backgroundImage="url(reptiles.jpeg)"
+      // }
+
+      // function changeScreen2() {
+      //   document.getElementById("screen").style.backgroundImage="url(beach.jpeg)"
+      // }
+
+      // function changeScreen() {
+      //   if (
+      //     document.getElementById("screen").style.backgroundImage ==
+      //     "url(beach.jpeg)"
+      //   ) {
+      //     document.getElementById("screen").style.backgroundImage =
+      //       "url(dog.jpeg)";
+      //   } else if (
+      //     document.getElementById("screen").style.backgroundImage ==
+      //     "url(dog.jpeg)"
+      //   ) {
+      //     document.getElementById("screen").style.backgroundImage =
+      //       "url(reptiles.jpeg)";
+      //   } else if (
+      //     document.getElementById("screen").style.backgroundImage ==
+      //     "url(reptiles.jpeg)"
+      //   ) {
+      //     alert(`HEY!`);
+      //   }
+      // }
+
+      // setInterval(changeScreen1(), 3000);
+      // setInterval(changeScreen2(), 6000);
+
+      var images = [
+        "url(dog.jpeg)",
+        "url(beach.jpeg)",
+        "url(reptiles.jpeg)",
+        "url(rainforest.jpeg)",
+        "url(scenery.jpeg)",
+      ];
+
+      var title = [
+        'Benito',
+        'If Only We Could Turn Back Time',
+        'Fronsh Bokey',
+        'A Time Of Change',
+        'Dawn of Another Day',
+      ]
+
+      let name = [
+        'by Rea Puzekar',
+        'by Uzhar Raiman',
+        'by Dalton Simon',
+        'by Malvaika',
+        'by Sky Matthews',
+      ]
+
+      var currentImageIndex = 0;
+
+      function changeScreen() {
+        document.getElementById("screen").style.backgroundImage =
+          images[currentImageIndex];
+        
+          document.getElementById("title-image").innerText = title[currentImageIndex];
+          document.getElementById("artist-name").innerText = name[currentImageIndex];
+        
+        
+
+        currentImageIndex = (1 + currentImageIndex) % images.length;
+      }
+      changeScreen();
+      setInterval(changeScreen, 7000);
+      //    setInterval(console.log(images[currentImageIndex]),3000);
+    </script>
+  </body>
+</html>
