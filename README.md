@@ -1,7 +1,8 @@
 
 # Flickrclone
 
-This repository contains the frontend implementation of a Flickr.com clone, developed using HTML, CSS, and Javascript. The project aims to reproduce the essential structure and design of the original Flickr website.To access the website, click [here] (https://ketanchavan24.github.io/Flickrclone/) 
+This repository contains the frontend implementation of a Flickr.com clone, developed using HTML, CSS, and Javascript. The project aims to reproduce the essential structure and design of the original Flickr website.To access the website, click [here] 
+(https://ketanchavan24.github.io/Flickrclone/) 
 
 
 ## Table of Contents
